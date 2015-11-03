@@ -1,0 +1,27 @@
+doctype html(lang='en')
+head
+  title Hello World!
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='description', content='')
+  meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
+  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic')
+  link(rel='stylesheet', href='./vendor.css')
+
+  link(rel='stylesheet', href='./application.css')
+  style(type='text/css').
+    /**
+    * Hide when Angular is not yet loaded and initialized
+    */
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+    }
+
+  body(ng-app='devup', ng-cloak='')
+    h2 Hello world!
+
+    // Leave at end of body
+    script(src='./angular.js')
+    script(src='./vendor.js')
+    script(src='./application.js')
+    script(src='./templates.js')
